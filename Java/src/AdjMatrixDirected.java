@@ -11,6 +11,10 @@ public class AdjMatrixDirected {
         matrix[source][destination] = 1;
     }
 
+    public void deleteEdge(int source, int destination){
+        matrix[source][destination] = 0;
+    }
+
     public void printGraph(){
         for(int i = 0; i < vertices; i++){
             for(int j = 0; j < vertices; j++){
